@@ -14,6 +14,11 @@ export const mainChildren = [
     path: 'normalTree',
     name: 'normalTree',
     component: () => import('@/views/normalTree/TestV.vue')
+  },
+  {
+    path: 'treeAndArray',
+    name: 'treeAndArray',
+    component: () => import('@/views/treeToArray/TestV.vue')
   }
 ]
 const router = createRouter({
