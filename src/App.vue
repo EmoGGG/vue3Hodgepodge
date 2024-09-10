@@ -1,4 +1,6 @@
-<script lang="ts" setup></script>
+<script lang="ts" setup>
+window.addEventListener('contextmenu', () => {})
+</script>
 <template>
   <div class="app">
     <router-view></router-view>

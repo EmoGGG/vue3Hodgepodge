@@ -8,6 +8,9 @@ export const mainChildren = [
   {
     path: 'oaTree',
     name: 'oaTree',
+    meta: {
+      keepAlive: true
+    },
     component: () => import('@/views/oaTree/TestV.vue')
   },
   {

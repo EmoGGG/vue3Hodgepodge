@@ -1,6 +1,11 @@
 <script lang="ts" setup>
 import NodeWrap from './NodeWrap.vue'
 import { ref } from 'vue'
+
+defineOptions({
+  name: 'oaTreee'
+})
+
 interface box {
   type: number
   boxChildList?: box[][]

@@ -10,7 +10,9 @@ const route = useRoute()
       <MenuColumn></MenuColumn>
     </div>
     <div class="content">
-      <routerView :key="route.fullPath"></routerView>
+      <router-view v-slot="{ Component }">
+        <keep-alive include="oaTreee"> <component :is="Component" /> </keep-alive>
+      </router-view>
     </div>
   </div>
 </template>

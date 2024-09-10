@@ -43,12 +43,14 @@ onBeforeMount(() => {
       </div>
     </div>
     <el-collapse-transition>
-      <TreeNode
-        id="fadeItem"
-        style="margin-left: 16px"
-        v-if="(treeNode as treeNodeType).children.length !== 0 && isStrech"
-        :treeNode="(treeNode as treeNodeType).children"
-      ></TreeNode>
+      <keep-alive>
+        <TreeNode
+          id="fadeItem"
+          style="margin-left: 16px"
+          v-if="(treeNode as treeNodeType).children.length !== 0 && isStrech"
+          :treeNode="(treeNode as treeNodeType).children"
+        ></TreeNode>
+      </keep-alive>
     </el-collapse-transition>
   </div>
 </template>
